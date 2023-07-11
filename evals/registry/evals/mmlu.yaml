@@ -1,455 +1,570 @@
-mmlu-abstract-algebra:
-  id: mmlu-abstract-algebra.val.ab-v1
-  metrics: [accuracy]
-mmlu-abstract-algebra.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+match_mmlu_abstract_algebra:
+  id: match_mmlu_abstract_algebra.test.v1
+  metrics:
+  - accuracy
+match_mmlu_abstract_algebra.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=abstract_algebra&split=validation
-
-mmlu-anatomy:
-  id: mmlu-anatomy.val.ab-v1
-  metrics: [accuracy]
-mmlu-anatomy.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/abstract_algebra/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/abstract_algebra/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_anatomy:
+  id: match_mmlu_anatomy.test.v1
+  metrics:
+  - accuracy
+match_mmlu_anatomy.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=anatomy&split=validation
-
-mmlu-astronomy:
-  id: mmlu-astronomy.val.ab-v1
-  metrics: [accuracy]
-mmlu-astronomy.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/anatomy/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/anatomy/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_astronomy:
+  id: match_mmlu_astronomy.test.v1
+  metrics:
+  - accuracy
+match_mmlu_astronomy.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=astronomy&split=validation
-
-mmlu-business-ethics:
-  id: mmlu-business-ethics.val.ab-v1
-  metrics: [accuracy]
-mmlu-business-ethics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/astronomy/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/astronomy/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_business_ethics:
+  id: match_mmlu_business_ethics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_business_ethics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=business_ethics&split=validation
-
-mmlu-clinical-knowledge:
-  id: mmlu-clinical-knowledge.val.ab-v1
-  metrics: [accuracy]
-mmlu-clinical-knowledge.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/business_ethics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/business_ethics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_clinical_knowledge:
+  id: match_mmlu_clinical_knowledge.test.v1
+  metrics:
+  - accuracy
+match_mmlu_clinical_knowledge.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=clinical_knowledge&split=validation
-
-mmlu-college-biology:
-  id: mmlu-college-biology.val.ab-v1
-  metrics: [accuracy]
-mmlu-college-biology.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/clinical_knowledge/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/clinical_knowledge/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_college_biology:
+  id: match_mmlu_college_biology.test.v1
+  metrics:
+  - accuracy
+match_mmlu_college_biology.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=college_biology&split=validation
-
-mmlu-college-chemistry:
-  id: mmlu-college-chemistry.val.ab-v1
-  metrics: [accuracy]
-mmlu-college-chemistry.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_biology/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_biology/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_college_chemistry:
+  id: match_mmlu_college_chemistry.test.v1
+  metrics:
+  - accuracy
+match_mmlu_college_chemistry.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=college_chemistry&split=validation
-
-mmlu-college-computer-science:
-  id: mmlu-college-computer-science.val.ab-v1
-  metrics: [accuracy]
-mmlu-college-computer-science.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_chemistry/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_chemistry/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_college_computer_science:
+  id: match_mmlu_college_computer_science.test.v1
+  metrics:
+  - accuracy
+match_mmlu_college_computer_science.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=college_computer_science&split=validation
-
-mmlu-college-mathematics:
-  id: mmlu-college-mathematics.val.ab-v1
-  metrics: [accuracy]
-mmlu-college-mathematics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_computer_science/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_computer_science/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_college_mathematics:
+  id: match_mmlu_college_mathematics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_college_mathematics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=college_mathematics&split=validation
-
-mmlu-college-medicine:
-  id: mmlu-college-medicine.val.ab-v1
-  metrics: [accuracy]
-mmlu-college-medicine.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_mathematics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_mathematics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_college_medicine:
+  id: match_mmlu_college_medicine.test.v1
+  metrics:
+  - accuracy
+match_mmlu_college_medicine.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=college_medicine&split=validation
-
-mmlu-college-physics:
-  id: mmlu-college-physics.val.ab-v1
-  metrics: [accuracy]
-mmlu-college-physics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_medicine/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_medicine/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_college_physics:
+  id: match_mmlu_college_physics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_college_physics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=college_physics&split=validation
-
-mmlu-computer-security:
-  id: mmlu-computer-security.val.ab-v1
-  metrics: [accuracy]
-mmlu-computer-security.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_physics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/college_physics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_computer_security:
+  id: match_mmlu_computer_security.test.v1
+  metrics:
+  - accuracy
+match_mmlu_computer_security.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=computer_security&split=validation
-
-mmlu-conceptual-physics:
-  id: mmlu-conceptual-physics.val.ab-v1
-  metrics: [accuracy]
-mmlu-conceptual-physics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/computer_security/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/computer_security/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_conceptual_physics:
+  id: match_mmlu_conceptual_physics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_conceptual_physics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=conceptual_physics&split=validation
-
-mmlu-econometrics:
-  id: mmlu-econometrics.val.ab-v1
-  metrics: [accuracy]
-mmlu-econometrics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/conceptual_physics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/conceptual_physics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_econometrics:
+  id: match_mmlu_econometrics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_econometrics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=econometrics&split=validation
-
-mmlu-electrical-engineering:
-  id: mmlu-electrical-engineering.val.ab-v1
-  metrics: [accuracy]
-mmlu-electrical-engineering.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/econometrics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/econometrics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_electrical_engineering:
+  id: match_mmlu_electrical_engineering.test.v1
+  metrics:
+  - accuracy
+match_mmlu_electrical_engineering.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=electrical_engineering&split=validation
-
-mmlu-elementary-mathematics:
-  id: mmlu-elementary-mathematics.val.ab-v1
-  metrics: [accuracy]
-mmlu-elementary-mathematics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/electrical_engineering/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/electrical_engineering/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_elementary_mathematics:
+  id: match_mmlu_elementary_mathematics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_elementary_mathematics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=elementary_mathematics&split=validation
-
-mmlu-formal-logic:
-  id: mmlu-formal-logic.val.ab-v1
-  metrics: [accuracy]
-mmlu-formal-logic.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/elementary_mathematics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/elementary_mathematics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_formal_logic:
+  id: match_mmlu_formal_logic.test.v1
+  metrics:
+  - accuracy
+match_mmlu_formal_logic.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=formal_logic&split=validation
-
-mmlu-global-facts:
-  id: mmlu-global-facts.val.ab-v1
-  metrics: [accuracy]
-mmlu-global-facts.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/formal_logic/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/formal_logic/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_global_facts:
+  id: match_mmlu_global_facts.test.v1
+  metrics:
+  - accuracy
+match_mmlu_global_facts.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=global_facts&split=validation
-
-mmlu-high-school-biology:
-  id: mmlu-high-school-biology.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-biology.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/global_facts/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/global_facts/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_biology:
+  id: match_mmlu_high_school_biology.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_biology.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_biology&split=validation
-
-mmlu-high-school-chemistry:
-  id: mmlu-high-school-chemistry.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-chemistry.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_biology/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_biology/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_chemistry:
+  id: match_mmlu_high_school_chemistry.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_chemistry.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_chemistry&split=validation
-
-mmlu-high-school-computer-science:
-  id: mmlu-high-school-computer-science.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-computer-science.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_chemistry/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_chemistry/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_computer_science:
+  id: match_mmlu_high_school_computer_science.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_computer_science.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_computer_science&split=validation
-
-mmlu-high-school-european-history:
-  id: mmlu-high-school-european-history.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-european-history.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_computer_science/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_computer_science/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_european_history:
+  id: match_mmlu_high_school_european_history.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_european_history.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_european_history&split=validation
-
-mmlu-high-school-geography:
-  id: mmlu-high-school-geography.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-geography.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_european_history/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_european_history/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_geography:
+  id: match_mmlu_high_school_geography.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_geography.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_geography&split=validation
-
-mmlu-high-school-government-and-politics:
-  id: mmlu-high-school-government-and-politics.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-government-and-politics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_geography/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_geography/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_government_and_politics:
+  id: match_mmlu_high_school_government_and_politics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_government_and_politics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_government_and_politics&split=validation
-
-mmlu-high-school-macroeconomics:
-  id: mmlu-high-school-macroeconomics.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-macroeconomics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_government_and_politics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_government_and_politics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_macroeconomics:
+  id: match_mmlu_high_school_macroeconomics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_macroeconomics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_macroeconomics&split=validation
-
-mmlu-high-school-mathematics:
-  id: mmlu-high-school-mathematics.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-mathematics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_macroeconomics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_macroeconomics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_mathematics:
+  id: match_mmlu_high_school_mathematics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_mathematics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_mathematics&split=validation
-
-mmlu-high-school-microeconomics:
-  id: mmlu-high-school-microeconomics.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-microeconomics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_mathematics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_mathematics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_microeconomics:
+  id: match_mmlu_high_school_microeconomics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_microeconomics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_microeconomics&split=validation
-
-mmlu-high-school-physics:
-  id: mmlu-high-school-physics.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-physics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_microeconomics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_microeconomics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_physics:
+  id: match_mmlu_high_school_physics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_physics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_physics&split=validation
-
-mmlu-high-school-psychology:
-  id: mmlu-high-school-psychology.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-psychology.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_physics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_physics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_psychology:
+  id: match_mmlu_high_school_psychology.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_psychology.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_psychology&split=validation
-
-mmlu-high-school-statistics:
-  id: mmlu-high-school-statistics.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-statistics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_psychology/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_psychology/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_statistics:
+  id: match_mmlu_high_school_statistics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_statistics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_statistics&split=validation
-
-mmlu-high-school-us-history:
-  id: mmlu-high-school-us-history.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-us-history.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_statistics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_statistics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_us_history:
+  id: match_mmlu_high_school_us_history.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_us_history.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_us_history&split=validation
-
-mmlu-high-school-world-history:
-  id: mmlu-high-school-world-history.val.ab-v1
-  metrics: [accuracy]
-mmlu-high-school-world-history.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_us_history/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_us_history/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_high_school_world_history:
+  id: match_mmlu_high_school_world_history.test.v1
+  metrics:
+  - accuracy
+match_mmlu_high_school_world_history.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=high_school_world_history&split=validation
-
-mmlu-human-aging:
-  id: mmlu-human-aging.val.ab-v1
-  metrics: [accuracy]
-mmlu-human-aging.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_world_history/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/high_school_world_history/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_human_aging:
+  id: match_mmlu_human_aging.test.v1
+  metrics:
+  - accuracy
+match_mmlu_human_aging.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=human_aging&split=validation
-
-mmlu-human-sexuality:
-  id: mmlu-human-sexuality.val.ab-v1
-  metrics: [accuracy]
-mmlu-human-sexuality.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/human_aging/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/human_aging/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_human_sexuality:
+  id: match_mmlu_human_sexuality.test.v1
+  metrics:
+  - accuracy
+match_mmlu_human_sexuality.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=human_sexuality&split=validation
-
-mmlu-international-law:
-  id: mmlu-international-law.val.ab-v1
-  metrics: [accuracy]
-mmlu-international-law.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/human_sexuality/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/human_sexuality/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_international_law:
+  id: match_mmlu_international_law.test.v1
+  metrics:
+  - accuracy
+match_mmlu_international_law.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=international_law&split=validation
-
-mmlu-jurisprudence:
-  id: mmlu-jurisprudence.val.ab-v1
-  metrics: [accuracy]
-mmlu-jurisprudence.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/international_law/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/international_law/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_jurisprudence:
+  id: match_mmlu_jurisprudence.test.v1
+  metrics:
+  - accuracy
+match_mmlu_jurisprudence.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=jurisprudence&split=validation
-
-mmlu-logical-fallacies:
-  id: mmlu-logical-fallacies.val.ab-v1
-  metrics: [accuracy]
-mmlu-logical-fallacies.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/jurisprudence/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/jurisprudence/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_logical_fallacies:
+  id: match_mmlu_logical_fallacies.test.v1
+  metrics:
+  - accuracy
+match_mmlu_logical_fallacies.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=logical_fallacies&split=validation
-
-mmlu-machine-learning:
-  id: mmlu-machine-learning.val.ab-v1
-  metrics: [accuracy]
-mmlu-machine-learning.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/logical_fallacies/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/logical_fallacies/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_machine_learning:
+  id: match_mmlu_machine_learning.test.v1
+  metrics:
+  - accuracy
+match_mmlu_machine_learning.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=machine_learning&split=validation
-
-mmlu-management:
-  id: mmlu-management.val.ab-v1
-  metrics: [accuracy]
-mmlu-management.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/machine_learning/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/machine_learning/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_management:
+  id: match_mmlu_management.test.v1
+  metrics:
+  - accuracy
+match_mmlu_management.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=management&split=validation
-
-mmlu-marketing:
-  id: mmlu-marketing.val.ab-v1
-  metrics: [accuracy]
-mmlu-marketing.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/management/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/management/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_marketing:
+  id: match_mmlu_marketing.test.v1
+  metrics:
+  - accuracy
+match_mmlu_marketing.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=marketing&split=validation
-
-mmlu-medical-genetics:
-  id: mmlu-medical-genetics.val.ab-v1
-  metrics: [accuracy]
-mmlu-medical-genetics.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/marketing/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/marketing/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_medical_genetics:
+  id: match_mmlu_medical_genetics.test.v1
+  metrics:
+  - accuracy
+match_mmlu_medical_genetics.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=medical_genetics&split=validation
-
-mmlu-miscellaneous:
-  id: mmlu-miscellaneous.val.ab-v1
-  metrics: [accuracy]
-mmlu-miscellaneous.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/medical_genetics/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/medical_genetics/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_miscellaneous:
+  id: match_mmlu_miscellaneous.test.v1
+  metrics:
+  - accuracy
+match_mmlu_miscellaneous.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=miscellaneous&split=validation
-
-mmlu-moral-disputes:
-  id: mmlu-moral-disputes.val.ab-v1
-  metrics: [accuracy]
-mmlu-moral-disputes.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/miscellaneous/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/miscellaneous/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_moral_disputes:
+  id: match_mmlu_moral_disputes.test.v1
+  metrics:
+  - accuracy
+match_mmlu_moral_disputes.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=moral_disputes&split=validation
-
-mmlu-moral-scenarios:
-  id: mmlu-moral-scenarios.val.ab-v1
-  metrics: [accuracy]
-mmlu-moral-scenarios.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/moral_disputes/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/moral_disputes/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_moral_scenarios:
+  id: match_mmlu_moral_scenarios.test.v1
+  metrics:
+  - accuracy
+match_mmlu_moral_scenarios.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=moral_scenarios&split=validation
-
-mmlu-nutrition:
-  id: mmlu-nutrition.val.ab-v1
-  metrics: [accuracy]
-mmlu-nutrition.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/moral_scenarios/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/moral_scenarios/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_nutrition:
+  id: match_mmlu_nutrition.test.v1
+  metrics:
+  - accuracy
+match_mmlu_nutrition.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=nutrition&split=validation
-
-mmlu-philosophy:
-  id: mmlu-philosophy.val.ab-v1
-  metrics: [accuracy]
-mmlu-philosophy.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/nutrition/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/nutrition/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_philosophy:
+  id: match_mmlu_philosophy.test.v1
+  metrics:
+  - accuracy
+match_mmlu_philosophy.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=philosophy&split=validation
-
-mmlu-prehistory:
-  id: mmlu-prehistory.val.ab-v1
-  metrics: [accuracy]
-mmlu-prehistory.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/philosophy/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/philosophy/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_prehistory:
+  id: match_mmlu_prehistory.test.v1
+  metrics:
+  - accuracy
+match_mmlu_prehistory.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=prehistory&split=validation
-
-mmlu-professional-accounting:
-  id: mmlu-professional-accounting.val.ab-v1
-  metrics: [accuracy]
-mmlu-professional-accounting.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/prehistory/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/prehistory/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_professional_accounting:
+  id: match_mmlu_professional_accounting.test.v1
+  metrics:
+  - accuracy
+match_mmlu_professional_accounting.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=professional_accounting&split=validation
-
-mmlu-professional-law:
-  id: mmlu-professional-law.val.ab-v1
-  metrics: [accuracy]
-mmlu-professional-law.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_accounting/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_accounting/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_professional_law:
+  id: match_mmlu_professional_law.test.v1
+  metrics:
+  - accuracy
+match_mmlu_professional_law.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=professional_law&split=validation
-
-mmlu-professional-medicine:
-  id: mmlu-professional-medicine.val.ab-v1
-  metrics: [accuracy]
-mmlu-professional-medicine.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_law/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_law/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_professional_medicine:
+  id: match_mmlu_professional_medicine.test.v1
+  metrics:
+  - accuracy
+match_mmlu_professional_medicine.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=professional_medicine&split=validation
-
-mmlu-professional-psychology:
-  id: mmlu-professional-psychology.val.ab-v1
-  metrics: [accuracy]
-mmlu-professional-psychology.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_medicine/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_medicine/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_professional_psychology:
+  id: match_mmlu_professional_psychology.test.v1
+  metrics:
+  - accuracy
+match_mmlu_professional_psychology.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=professional_psychology&split=validation
-
-mmlu-public-relations:
-  id: mmlu-public-relations.val.ab-v1
-  metrics: [accuracy]
-mmlu-public-relations.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_psychology/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/professional_psychology/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_public_relations:
+  id: match_mmlu_public_relations.test.v1
+  metrics:
+  - accuracy
+match_mmlu_public_relations.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=public_relations&split=validation
-
-mmlu-security-studies:
-  id: mmlu-security-studies.val.ab-v1
-  metrics: [accuracy]
-mmlu-security-studies.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/public_relations/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/public_relations/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_security_studies:
+  id: match_mmlu_security_studies.test.v1
+  metrics:
+  - accuracy
+match_mmlu_security_studies.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=security_studies&split=validation
-
-mmlu-sociology:
-  id: mmlu-sociology.val.ab-v1
-  metrics: [accuracy]
-mmlu-sociology.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/security_studies/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/security_studies/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_sociology:
+  id: match_mmlu_sociology.test.v1
+  metrics:
+  - accuracy
+match_mmlu_sociology.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=sociology&split=validation
-
-mmlu-us-foreign-policy:
-  id: mmlu-us-foreign-policy.val.ab-v1
-  metrics: [accuracy]
-mmlu-us-foreign-policy.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/sociology/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/sociology/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_us_foreign_policy:
+  id: match_mmlu_us_foreign_policy.test.v1
+  metrics:
+  - accuracy
+match_mmlu_us_foreign_policy.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=us_foreign_policy&split=validation
-
-mmlu-virology:
-  id: mmlu-virology.val.ab-v1
-  metrics: [accuracy]
-mmlu-virology.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/us_foreign_policy/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/us_foreign_policy/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_virology:
+  id: match_mmlu_virology.test.v1
+  metrics:
+  - accuracy
+match_mmlu_virology.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=virology&split=validation
-
-mmlu-world-religions:
-  id: mmlu-world-religions.val.ab-v1
-  metrics: [accuracy]
-mmlu-world-religions.val.ab-v1:
-  class: evals.elsuite.multiple_choice:MultipleChoice
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/virology/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/virology/samples.jsonl
+  class: evals.elsuite.basic.match:Match
+match_mmlu_world_religions:
+  id: match_mmlu_world_religions.test.v1
+  metrics:
+  - accuracy
+match_mmlu_world_religions.test.v1:
   args:
-    dataset: hf://hendrycks_test?name=world_religions&split=validation
+    few_shot_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/world_religions/few_shot.jsonl
+    num_few_shot: 4
+    samples_jsonl: /Users/aenguslynch/Desktop/PhD/Projects/ai_manipulation/code/evals/examples/../evals/registry/data/mmlu/world_religions/samples.jsonl
+  class: evals.elsuite.basic.match:Match

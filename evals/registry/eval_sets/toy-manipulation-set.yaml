@@ -1,0 +1,5 @@
+toy-manipulation-set:
+  evals:
+  - toy-manipulation-conversation-noggle
+  - toy-manipulation-conversation-apa
+  - toy-manipulation-conversation-kenton
